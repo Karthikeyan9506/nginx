@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mynginxcont:
+    image: mynginximg
+    ports:
+      - "8000:80"
+    volumes:
+      - ./src:/usr/share/nginx/html
